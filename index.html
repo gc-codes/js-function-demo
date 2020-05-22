@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Demo</title>
+    </head>
+
+    <body>
+        <!-- Document Object Model / DOM -->
+        <div id="calculator">
+            <input id="firstNumber" type="text" placeholder="First Number">
+            <br/>
+            <br/>
+            <input id="secondNumber" type="text" placeholder="Second Number">
+            <br/>
+            <br/>
+            <input type="button" onclick="ram()" value="Add">
+            <input type="button" onclick="shyam()" value="Substract">
+            <br/>
+            <div id="resultDiv"></div>
+        </div>
+
+        <script>
+            // get reference to the objects or DOM elements
+            debugger;
+            var firstNumberInputTextElement = document.getElementById("firstNumber");
+            var secondNumberInputTextElement = document.getElementById("secondNumber");
+            var resultDivElement = document.getElementById("resultDiv");
+
+            // event driven programming
+            function ram() {
+                debugger;
+                var firstNumber = parseInt(firstNumberInputTextElement.value);
+                var secondNumber = parseInt(secondNumberInputTextElement.value);
+
+                // DOM manipulation
+                resultDivElement.innerHTML = "The sum is " + (firstNumber + secondNumber);
+            }
+
+            function shyam() {
+                debugger;
+                var firstNumber = parseInt(firstNumberInputTextElement.value);
+                var secondNumber = parseInt(secondNumberInputTextElement.value);
+
+                // DOM manipulation
+                resultDivElement.innerHTML = "The sum is " + (firstNumber - secondNumber);
+            }
+            
+        </script>
+    </body>
+</html>
